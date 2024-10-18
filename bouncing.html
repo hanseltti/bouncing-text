@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bouncing Text Efecto Ola</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Establecer el fondo negro */
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+/* Estilo del texto */
+h1 {
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 3em;
+    margin: 0;
+    display: flex; /* Esto nos permite animar cada letra individualmente */
+}
+/* Aplicar animación a cada letra */
+h1 span {
+    display: inline-block;
+    animation: bounce 1.5s infinite;
+    animation-timing-function: ease-in-out;
+}
+/* Animación de rebote en secuencia */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0); /* Posición inicial */
+    }
+    50% {
+        transform: translateY(-20px); /* Subida de la letra */
+    }
+}
+/* Aplicar un pequeño retraso para que cada letra rebote en diferentes tiempos */
+h1 span:nth-child(1) {
+    animation-delay: 0.1s;
+}
+h1 span:nth-child(2) {
+    animation-delay: 0.2s;
+}
+h1 span:nth-child(3) {
+    animation-delay: 0.3s;
+}
+h1 span:nth-child(4) {
+    animation-delay: 0.4s;
+}
+h1 span:nth-child(5) {
+    animation-delay: 0.5s;
+}
+h1 span:nth-child(6) {
+    animation-delay: 0.6s;
+}
+h1 span:nth-child(7) {
+    animation-delay: 0.7s;
+}
+h1 span:nth-child(8) {
+    animation-delay: 0.8s;
+}
+h1 span:nth-child(9) {
+    animation-delay: 0.9s;
+}
+h1 span:nth-child(10) {
+    animation-delay: 1s;
+}
+    </style>
+</head>
+<body>
+    <h1 class="wave">
+       <span>¡</span><span>H</span><span>o</span>
+<span>l</span><span>a</span><span>,</span>
+<span> </span><span>M</span><span>u</span><span>n</span>
+<span>d</span><span>o</span><span>!</span>
+     </h1>     
+</body>
+</html>
